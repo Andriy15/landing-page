@@ -1,0 +1,242 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 22px;
+}
+
+.nav span {
+    margin-right: 40px;
+    font-weight: 100;
+    cursor: pointer;
+    word-spacing: 1px;
+    font-size: 16px;
+}
+
+.nav span:first-child {
+    border-bottom: 1px solid #1375ED;
+    color: #1375ED;
+}
+
+.nav button {
+    width: 129px;
+    height: 38px;
+    background: #1375ED;
+    color: white;
+    border: none;
+    border-radius: 12px 0px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.section-learn {
+    margin-top: 93px;
+}
+
+/* Button "Register Now" */
+.btn-register {
+    width: 160px;
+    height: 50px;
+    background: #1375ED;
+    color: white;
+    border: none;
+    border-radius: 10px 0px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*main section*/
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 130px;
+}
+
+.text-item h1 {
+    width: 570px;
+    margin-top: 80px; 
+    font-size: 48px; 
+    text-align: center;
+}
+
+.section-verified {
+    margin-bottom: 130px;
+}
+
+.section-enrollment {
+    background-color: #1375ED1F;
+    padding: 50px;
+}
+
+.main-item-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 73px;
+    margin-left: 20px;
+}
+
+.main-item-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 73px;
+    margin-right: 20px;
+}
+
+.section-quality {
+    margin-top: 63px;
+}
+
+.section-assistance {
+    margin-top: 85px;
+    background-color: #F372381F;
+    padding: 50px;
+}
+
+.section-personalised {
+    margin-top: 60px;
+}
+
+
+
+/* Accordion */
+
+.section-accordion {
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: #1375ED;
+    font-size: 42px;
+}
+
+.accordion {
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accordion .container-ac {
+    position: relative;
+    margin: 10px 10px;
+    background-color: #DDECFE;
+    padding: 0 43px;
+    width: 912px;
+  }
+    
+.accordion .label {
+    font-size: 14px;
+    position: relative;
+    padding: 16px 0;
+    font-size: 30px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+
+
+.accordion .content {
+position: relative;
+background: #DDECFE;
+border-radius: 3px;
+height: 0;
+font-size: 18px;
+text-align: justify;
+overflow: hidden;
+transition: 0.5s;
+}
+
+
+.accordion .container-ac.active .content {
+    height: 100px;
+}
+
+
+.accordion .container-ac.active .label::before {
+    content: '-';
+    font-size: 30px;
+}
+
+/* Div Upgrade */
+
+.section-upgrade {
+    margin-top: 100px;
+    background-color: #E8F2FF;
+    padding: 60px 0 87px 0;
+}
+
+.div-upgrade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-upgrade h1 {
+    max-width: 782px;
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.div-upgrade button {
+    background-color: #F37238;
+}
+
+.div-upgrade span {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+
+.section-footer {
+    background-color: #1375ED;
+    color: white;
+}
+
+.f-item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.f-item-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 80px 0;
+}
+
+.icons img {
+    filter: invert(1);
+}
+
+.icons a:nth-child(-n+3) {
+    margin-right: 30px;
+  }
+  
