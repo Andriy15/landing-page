@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+img {
+    width: 100%;
+}
+
 /* Navigation */
 .nav {
     display: flex;
@@ -138,7 +142,6 @@ h1 {
     margin: 10px 10px;
     background-color: #DDECFE;
     padding: 0 43px;
-    width: 912px;
   }
     
 .accordion .label {
@@ -148,6 +151,7 @@ h1 {
     font-size: 30px;
     color: #333333;
     cursor: pointer;
+    color: #33333399;
 }
 
 .accordion .label::before {
@@ -162,25 +166,31 @@ h1 {
 
 
 .accordion .content {
-position: relative;
-background: #DDECFE;
-border-radius: 3px;
-height: 0;
-font-size: 18px;
-text-align: justify;
-overflow: hidden;
-transition: 0.5s;
+    position: relative;
+    background: #DDECFE;
+    border-radius: 3px;
+    height: 0;
+    font-size: 18px;
+    text-align: justify;
+    overflow: hidden;
+    transition: 0.5s;
+    color: #33333399;
 }
 
 
 .accordion .container-ac.active .content {
-    height: 100px;
+    height: auto;
+    padding: 20px 0;
 }
 
 
 .accordion .container-ac.active .label::before {
     content: '-';
     font-size: 30px;
+}
+
+.accordion .container-ac.active .label {
+    color: #333333;
 }
 
 /* Div Upgrade */
@@ -257,7 +267,6 @@ transition: 0.5s;
   
 
 /* Media Queries */
-
 @media screen and (max-width: 600px) {
     .section-enrollment {
         padding: 0;
@@ -266,4 +275,28 @@ transition: 0.5s;
     .section-assistance {
         padding: 0;
     }
+
+    .nav span {
+        margin: 0;
+    }
+
+    .btn-register {
+        margin-bottom: 30px;
+    }
+
+    .accordion .label {
+        font-size: 18px;
+    }
+
+    .nav span {
+        font-size: 12px;
+        margin-right: 8px;
+    }
+
+    .nav button {
+        width: 100px;
+        height: 30px;
+        font-size: 11px;
+    }
 }
+
