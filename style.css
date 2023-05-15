@@ -23,10 +23,13 @@ img {
     font-size: 16px;
 }
 
-.nav span:first-child {
+/* border-bottom: 1px solid #1375ED;
+    color: #1375ED; */
+
+/* .nav span:first-child {
     border-bottom: 1px solid #1375ED;
     color: #1375ED;
-}
+} */
 
 .nav button {
     width: 129px;
