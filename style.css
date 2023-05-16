@@ -176,7 +176,7 @@ h1 {
     font-size: 18px;
     text-align: justify;
     overflow: hidden;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     color: #33333399;
 }
 
@@ -255,10 +255,6 @@ h1 {
     padding: 30px 0 80px 0;
 }
 
-.icons img {
-    filter: invert(1);
-}
-
 .icons a:nth-child(-n+3) {
     margin-right: 30px;
 }
@@ -289,6 +285,10 @@ h1 {
 
     .accordion .label {
         font-size: 18px;
+    }
+
+    .nav {
+        justify-content: center;
     }
 
     .nav span {

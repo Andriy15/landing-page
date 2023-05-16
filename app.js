@@ -20,3 +20,4 @@ navSpan.forEach((span) => {
     prevSpan = span 
   })
 })
+
