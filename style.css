@@ -23,13 +23,50 @@ img {
     font-size: 16px;
 }
 
-/* border-bottom: 1px solid #1375ED;
-    color: #1375ED; */
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none; 
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
 
-/* .nav span:first-child {
+.mobile-menu {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.mobile-menu span {
+    margin-bottom: 10px;
+}
+
+.close-menu {
+    display: none; 
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+}
+
+
+.nav span:first-child {
     border-bottom: 1px solid #1375ED;
     color: #1375ED;
-} */
+}
 
 .nav button {
     width: 129px;
@@ -41,6 +78,32 @@ img {
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
+}
+
+/* Menu Hamburger */
+.hamburger-menu {
+    display: none; /* Hide by default for screens larger than 600px */
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.mobile-menu {
+    display: none; /* Hide by default for screens larger than 600px */
+}
+
+.close-menu {
+    display: none; /* Hide close button by default */
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
 }
 
 .section-learn {
@@ -61,11 +124,36 @@ img {
     font-weight: 600;
 }
 
-/*main section*/
+.btn-register-mobile {
+    display: none;
+}
 
+.btn-register-nav {
+    width: 160px;
+    height: 50px;
+    background: #1375ED;
+    color: white;
+    border: none;
+    border-radius: 10px 0px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*Main section*/
 .info {
     display: flex;
     flex-direction: column;
+}
+
+.learn {
+    font-size: 64px;
+}
+
+.join {
+    font-size: 54px;
+    color: #1375ED;
+    margin-top: 20px;
 }
 
 .text-item {
@@ -196,8 +284,20 @@ h1 {
     color: #333333;
 }
 
-/* Div Upgrade */
+/* Main section's spans */
+.span-head {
+    font-size: 32px; 
+    font-weight: 700;
+    margin-bottom: 15px;
+}
 
+.span-text {
+    font-size: 20px; 
+    font-weight: 500; 
+    color: #33333399;
+}
+
+/* Div Upgrade */
 .section-upgrade {
     margin-top: 100px;
     background-color: #E8F2FF;
@@ -266,6 +366,93 @@ h1 {
   
 
 /* Media Queries */
+
+@media screen and (max-width: 991px){
+    .info {
+        margin: 0 20px;
+    }
+
+    .learn {
+        font-size: 37px;
+    }
+
+    .join {
+        font-size: 32px;
+    }
+
+    .f-item-bottom {
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .terms {
+        margin-bottom: 30px;
+    }
+
+    .copyright {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav span {
+        display: none;
+    }
+
+    .btn-register {
+        margin: 20px 0;
+    }
+
+    .btn-register-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none; /* Hide mobile menu by default */
+        background-color: #f1f1f1;
+        padding: 20px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        font-size: 30px;
+    }
+
+    .close-menu {
+        display: none; /* Hide close button by default */
+    }
+
+    .btn-register-mobile {
+        display: block;
+        margin-top: 20px;
+        width: 160px;
+        height: 50px;
+        background: #1375ED;
+        color: white;
+        border: none;
+        border-radius: 10px 0px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .accordion .label {
+        font-size: 16px;
+    }
+
+    .learn {
+        font-size: 30px;
+    }
+
+    .join {
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .section-enrollment {
         padding: 0;
@@ -275,31 +462,24 @@ h1 {
         padding: 0;
     }
 
-    .nav span {
-        margin: 0;
-    }
-
-    .btn-register {
-        margin-bottom: 30px;
-    }
-
     .accordion .label {
         font-size: 18px;
     }
 
-    .nav {
-        justify-content: center;
+    .f-item-top {
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
     }
 
-    .nav span {
-        font-size: 12px;
-        margin-right: 8px;
+    .learn {
+        font-size: 46px;
     }
 
-    .nav button {
-        width: 100px;
-        height: 30px;
-        font-size: 11px;
+    .join {
+        font-size: 46px;
     }
+
+    
 }
 
